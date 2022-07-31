@@ -1,17 +1,38 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="feature.css">
-    </head>
-    <body>
-        
-        
-        <script src="feature.js" async defer></script>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>✎ Quotes Slideshow ✎</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="feature.css">
+</head>
+
+<body>
+    <section class="quote_container">
+        <section class="quote_section" id="quote_section">
+            <hr class="double_line" />
+            <blockquote class="display_quotes">
+                <p id="quotation"></p>
+                <footer>
+                    <i id="source"></i>
+                </footer>
+            </blockquote>
+            <a class="prev" onclick="plusSlides(-1)">❮❮</a>
+            <a class="next" onclick="plusSlides(1)">❯❯</a>
+        </section>
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <script type="module" src="feature.js" async defer></script>
+</body>
+
 </html>
